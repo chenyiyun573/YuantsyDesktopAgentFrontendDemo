@@ -1,0 +1,3 @@
+requests
+pyautogui
+Pillow  # Often needed with pyautogui for handling images, depending on your system
