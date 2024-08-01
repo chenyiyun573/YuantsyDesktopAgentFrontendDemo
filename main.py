@@ -5,7 +5,7 @@ import platform
 from executor import execute_command  # Ensure this module is properly defined to handle the commands
 
 # Configuration
-BACKEND_URL = "http://192.168.137.214:8000"
+BACKEND_URL = "http://192.168.137.228:8000"
 
 # Get the screen size and OS information
 screen_width, screen_height = pyautogui.size()
@@ -32,7 +32,7 @@ try:
             execute_command(action_command)
 
         # Small delay before next loop iteration
-        time.sleep(1)
+        time.sleep(3)
 
 except KeyboardInterrupt:
     print("Session ended by user.")
