@@ -22,3 +22,9 @@ This version is stored as 1.0.0, which corresponds to the BackEnd 1.0.0.
 20240730 1442 PT
 This version of code support the program.py and scripts for execution from the backend. This version is stored as 1.0.1.
 
+
+20240801 0157 PT
+I rewrite the frontend code according to the new backend API.
+This version of code is stored as 1.0.2.
+
+
