@@ -27,4 +27,9 @@ This version of code support the program.py and scripts for execution from the b
 I rewrite the frontend code according to the new backend API.
 This version of code is stored as 1.0.2.
 
+20240801 1811 PT
+Add Scripts link download on backend, the frontend can tell the backend which JSON action script to use. 
+This version of code is stored as 1.0.3, next I plan to exchange the server and client, use windows as server and macbook as client to write a script on mac. 
+
+
 
