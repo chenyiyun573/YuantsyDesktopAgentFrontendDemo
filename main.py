@@ -12,7 +12,8 @@ def get_current_timestamp():
 
 
 # Configuration
-BACKEND_URL = "http://192.168.137.228:8000"
+#BACKEND_URL = "http://192.168.137.228:8000"
+BACKEND_URL = "http://192.168.137.1:8000"
 
 # Get the screen size and OS information
 screen_width, screen_height = pyautogui.size()
@@ -26,7 +27,12 @@ frontend_info = {
 }
 
 # Initial session setup
-response = requests.post(f"{BACKEND_URL}/sessions/", json={"prompt": prompt, "frontend_info": frontend_info, "is_script": True, "is_script_link": True,"script_name_link": "http://public2.yuantsy.com/Project/DesktopAgent/Scripts/Script_win_DownloadGithubZip.json"})
+
+# response = requests.post(f"{BACKEND_URL}/sessions/", json={"prompt": prompt, "frontend_info": frontend_info, "is_script": True, "is_script_link": True,"script_name_link": "http://public2.yuantsy.com/Project/DesktopAgent/Scripts/Script_mac_DownloadGithubZip.json"})
+
+response = requests.post(f"{BACKEND_URL}/sessions/", json={"prompt": prompt, "frontend_info": frontend_info, "is_script": True, "is_script_link": False,"script_name_link": "Script_mac_DownloadGithubZip"})
+
+
 session_data = response.json()
 session_id = session_data.get("session_id")
 print(session_data)

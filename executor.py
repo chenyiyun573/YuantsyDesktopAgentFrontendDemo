@@ -1,4 +1,6 @@
 import pyautogui
+from special_gesture_mac import enter_exit_full_screen, minimize_window, close_window
+
 
 def execute_command(command):
     action_type, params = command.split(':', 1)
@@ -19,7 +21,9 @@ def execute_command(command):
         'scroll-to': execute_scroll_to,
         'autocomplete-text': execute_autocomplete_text,
         'batch': execute_batch,
-        'shortcut': execute_shortcut
+        'shortcut': execute_shortcut,
+
+        'special_gesture_mac': execute_special_gesture_mac,
     }
     action_function = action_dict.get(action_type)
     if action_function:
@@ -33,7 +37,7 @@ def execute_move(params):
 
 def execute_click(params):
     x, y = map(int, params.split(','))
-    pyautogui.click(x, y)
+    pyautogui.click(x/2, y/2)
 
 def execute_double_click(params):
     x, y = map(int, params.split(','))
@@ -99,3 +103,15 @@ def execute_batch(params):
 def execute_shortcut(params):
     keys = params.split('+')
     pyautogui.hotkey(*keys)
+
+
+def execute_special_gesture_mac(params):
+    gesture = params.strip().lower()
+    if gesture == 'enter_exit_full_screen':
+        enter_exit_full_screen()
+    elif gesture == 'minimize_window':
+        minimize_window()
+    elif gesture == 'close_window':
+        close_window()
+    else:
+        print(f"Special gesture '{gesture}' not recognized.")

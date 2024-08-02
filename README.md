@@ -5,6 +5,13 @@ python3 -m venv .venv
 python3 -m pip install -r requirements.txt
 ```
 
+On macOS:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
 Then use 
 ```
 python3 main.py
@@ -32,4 +39,14 @@ Add Scripts link download on backend, the frontend can tell the backend which JS
 This version of code is stored as 1.0.3, next I plan to exchange the server and client, use windows as server and macbook as client to write a script on mac. 
 
 
+
+20240801 1939 PT
+When shift to manipulate on mac, I found that the mouse click coordinate is not correct. 
+Just like I verfied before, the coordinate on mac need to divide by 2 for pyautogui to execute correctly. Unknown reasons. 
+
+
+20240802 1436 PT
+Complete the macbook as client, windows as server version. For the macbook, things becomes a little bit different. I added some action patterns as these special gestures used on macbook to execute some actions like enter or exit full screen. The script is the same to download 3 github repo zips. 
+
+This version of code is stored as 1.0.4. 
 
