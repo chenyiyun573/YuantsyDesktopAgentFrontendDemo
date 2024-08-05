@@ -37,7 +37,8 @@ def execute_move(params):
 
 def execute_click(params):
     x, y = map(int, params.split(','))
-    pyautogui.click(x/2, y/2)
+    # pyautogui.click(x/2, y/2)
+    pyautogui.click(x, y)
 
 def execute_double_click(params):
     x, y = map(int, params.split(','))

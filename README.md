@@ -54,3 +54,8 @@ This version of code is stored as 1.0.4.
 20240804 1809 PT
 Hosted backend docker container on agent2.yuantsy.com:8000, and frontend on macos works well to visit the backend. 
 This version of code is stored 1.0.5.1.
+
+20240804 1846 PT
+Test the windows client to request to agent2.yuantsy.com:8000; notice a problem that the coordinate for macOS's pyautogui should be divided by 2 for unknown reasons. But for windows application, we should not. 
+So I commented and modified related code. 
+The test was passed on windows. This version of code is stored as 1.0.5.2. 

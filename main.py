@@ -31,7 +31,7 @@ frontend_info = {
 
 # response = requests.post(f"{BACKEND_URL}/sessions/", json={"prompt": prompt, "frontend_info": frontend_info, "is_script": True, "is_script_link": True,"script_name_link": "http://public2.yuantsy.com/Project/DesktopAgent/Scripts/Script_mac_DownloadGithubZip.json"})
 
-response = requests.post(f"{BACKEND_URL}/sessions/", json={"prompt": prompt, "frontend_info": frontend_info, "is_script": True, "is_script_link": False,"script_name_link": "Script_mac_DownloadGithubZip"})
+response = requests.post(f"{BACKEND_URL}/sessions/", json={"prompt": prompt, "frontend_info": frontend_info, "is_script": True, "is_script_link": False,"script_name_link": "Script_win_DownloadGithubZip"})
 
 
 session_data = response.json()
