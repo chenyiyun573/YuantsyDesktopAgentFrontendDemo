@@ -13,7 +13,8 @@ def get_current_timestamp():
 
 # Configuration
 #BACKEND_URL = "http://192.168.137.228:8000"
-BACKEND_URL = "http://192.168.137.1:8000"
+#BACKEND_URL = "http://192.168.137.1:8000"
+BACKEND_URL = "http://agent2.yuantsy.com:8000"
 
 # Get the screen size and OS information
 screen_width, screen_height = pyautogui.size()

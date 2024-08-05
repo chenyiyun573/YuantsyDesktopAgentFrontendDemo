@@ -50,3 +50,7 @@ Complete the macbook as client, windows as server version. For the macbook, thin
 
 This version of code is stored as 1.0.4. 
 
+
+20240804 1809 PT
+Hosted backend docker container on agent2.yuantsy.com:8000, and frontend on macos works well to visit the backend. 
+This version of code is stored 1.0.5.1.
